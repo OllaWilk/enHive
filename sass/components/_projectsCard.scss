@@ -1,0 +1,35 @@
+.card{
+    width: 33.333%;
+    color: $color-dark;
+    // position: relative;
+
+    .card-img-top {
+        height: 280px;
+    }
+
+    .card-body {
+        height: 310px;
+        position: relative;
+        bottom: 0;
+        // @include flex(column, center, center);
+        
+        h3 { 
+            @extend .h3;
+            padding: 15px 0;
+        }
+
+        p {
+            padding: 0 20px;
+            text-align: left;
+        }
+
+        a {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+    }
+}
+

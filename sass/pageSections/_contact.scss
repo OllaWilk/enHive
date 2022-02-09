@@ -1,0 +1,68 @@
+
+.contact {
+    @include flex(row, flex-start, space-between);
+    height: 600px;
+    margin-top: 48px;
+
+    .contact-image {
+        @include img(100%, 100%);
+        width: 50%;
+    }
+
+    .contact-text {
+        @include flex(column, center, space-between);
+        width: 45%;
+        height: 100%;
+
+        h2 {
+            @extend .h2;
+            margin: 0 0 0 0;
+            border-top: 1px solid $color-dark;
+            border-bottom: 1px solid $color-dark;
+            padding: 10px;
+        }
+
+        h3 {
+            @extend .h3;
+            font-weight: $font-normal;
+        }
+
+        .contact-cart {
+            @include flex(row, center, center);
+            width: 100%;
+
+
+            div {
+                // background-color: $color-main;
+                height: 100%;
+                width: 85%;
+            }
+        }
+
+    }
+}
+
+.client-description {
+    width: 100%;
+
+    ul {
+        padding: 0;
+
+        li {
+            font-weight: $font-bold;
+            color: $color-dark;
+            padding: 10px 0;
+        }
+    }
+}
+
+
+
+
+
+
+
+   
+        
+    
+    

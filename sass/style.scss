@@ -1,0 +1,24 @@
+@import "variables";
+@import "mixins";
+@import "typography";
+@import "global";
+@import "normalize";
+@import "layout";
+
+/* Components */
+@import "./components/buttons";
+@import "./components/contactCart";
+@import "./components/projectsCard";
+@import "./components/carousel";
+
+/* Page Sections */
+
+@import "./pageSections/services";
+@import "./pageSections/ourProjects";
+@import "./pageSections//contact";
+@import "./pageSections/aboutUs";
+
+
+/* Views */ 
+
+// @import "pages/";/

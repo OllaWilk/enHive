@@ -1,0 +1,36 @@
+.h1 {
+    font-family: $header-font;
+    font-weight: $font-bold;
+    font-size: 72px;
+    line-height: 1.2;
+ 
+    text-transform: uppercase;
+
+    span {
+        color: $color-main;
+    }
+}
+  
+.h2 {
+    font-family: $header-font;
+    font-size: 46px;
+    font-weight: $font-semibold;
+    text-transform: uppercase;
+    margin: 0 0 72px 0;
+    color: $color-dark;
+}
+
+.h3 {
+    font-size: 24px;
+    margin: 0 0 12;
+    font-weight: $font-bold;
+    text-transform: uppercase;
+    color: $color-dark;
+}
+
+.h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: $font-bold;
+    color: $color-dark;
+}

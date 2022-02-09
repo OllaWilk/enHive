@@ -1,0 +1,25 @@
+.about-us {
+
+        h2 {
+            @extend .h2;
+
+        }   
+
+        h3 {
+            // border-bottom: 1px solid $color-dark;
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            text-align: left;
+        }   
+
+        p {
+            text-align: left;
+            padding-bottom: 25px;
+        }
+
+        a {
+            width: 200px;
+            
+        }
+}
+

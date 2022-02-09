@@ -1,0 +1,90 @@
+.contact-nav {
+    @include flex(row, center, space-between);
+    height: 140px;
+    width: 100%;
+
+
+    .logo-wrap {
+        background-color: $color-neutral;
+        width: 30%;
+        height: 100%;
+        position: relative;
+
+
+        img {
+        @include center(absolute)
+        }
+    }
+
+    .contact-cart-wrap {
+        @include flex(row,center,center);
+    }
+}
+
+.navigation {
+    background-color: $color-dark;
+    
+    .navigation-wrap {
+        @include flex(row, flex-end, space-between); 
+        a {
+            width: 100%;
+        }
+    }
+}
+  
+.splash {
+    height: 70vh;
+    position: relative;
+    background-image: url('../images/splashStock1.jpg');
+    background-position: top left;
+    background-size: cover;
+    background-attachment: fixed;
+    color: $color-light;
+    z-index: -1;
+  
+    .splash-inner {
+      @include center(absolute);
+      padding: 1%;
+    }
+  
+    h2 {
+      @extend .h2;
+      color: $color-light;
+    }
+  
+    .splash-inner {
+      h1 {
+        @extend .h1;
+      }
+    }
+}
+  
+.active {
+    display: block;
+}
+
+ #pages_section {
+    padding: 48px 0;
+}
+
+  
+footer {
+    padding: 20px 0;
+    background-color: $color-dark;
+    @include flex(row, center, space-between);
+
+    span {
+        margin-right: 48px;
+    }
+
+    p {
+        color: $color-light;
+    }
+
+    i {
+        @include ikons($color-light, 20px);
+        text-decoration: none;
+    }
+   
+   
+}

@@ -1,0 +1,15 @@
+.contact-cart {
+    width: 280px;
+    height: 79px;
+    border-right: 1px solid $color-neutral;
+    @include flex(row, center, center);
+
+    i {
+        @include ikons($color-main, 38px);
+        margin-right: 20px;
+    }
+
+    h4 {
+        @extend .h4;
+    }
+}

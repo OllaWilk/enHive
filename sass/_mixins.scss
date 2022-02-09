@@ -1,0 +1,90 @@
+@mixin btn($btn-bg, $btn-text, $btn-border, $width) {
+    background-color: $btn-bg;
+    color: $btn-text;
+    transition: $transition;
+    display: inline-block;
+    width: $width;
+    padding: 20px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: $font-bold;
+    letter-spacing: 1px;
+    border-radius: $radius;
+    
+    cursor: pointer;
+
+    &:hover {
+      background: lighten($btn-bg, 5%);
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $btn-text;
+    }
+
+    &.disabled, &[disabled] {
+      background: desaturate($btn-bg, 100%);
+      cursor: not-allowed;
+    }
+  }
+
+
+@mixin flex($flex-direction, $align-items, $justify-content) {
+  display: flex;
+  flex-direction: $flex-direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+@mixin box-flex() {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@mixin center($position) {
+  position: $position;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin circle($radius) {
+  border-radius: 50%;
+  height: $radius;
+  width: $radius;
+}
+
+@mixin img($width, $height) {
+  width: $width;
+  height: $height;
+  overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+}
+
+
+@mixin ikons ($color, $font-size) {
+  color: $color;
+  font-size: $font-size;
+}
+
+
+/*Helpers*/
+
+.no-spacing {
+  margin: 0;
+  padding: 0;
+}
+
+.un-list > li{
+  // text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
