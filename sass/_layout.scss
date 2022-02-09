@@ -63,7 +63,10 @@
     display: block;
 }
 
- #pages_section {
+ #services,
+ #projects,
+ #about-us,
+ #contact {
     padding: 48px 0;
 }
 
@@ -85,6 +88,4 @@ footer {
         @include ikons($color-light, 20px);
         text-decoration: none;
     }
-   
-   
 }

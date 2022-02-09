@@ -27,7 +27,7 @@
   color: #f6b141;
 }
 
-.h2, .splash h2, .services h2, .our-projects h2, .contact .contact-text h2, .about-us h2 {
+.h2, .splash h2, .services h2, .our-projects h2, h2, .contact-wrap .contact-text h2, .about-us h2 {
   font-family: "Oswald", sans-serif;
   font-size: 46px;
   font-weight: 500;
@@ -36,7 +36,7 @@
   color: #5a4b47;
 }
 
-.h3, .card .card-body h3, .services .projects-wrap .projects h3, .contact .contact-text h3 {
+.h3, .card .card-body h3, .services .projects-wrap .projects h3, .contact-wrap .contact-text h3 {
   font-size: 24px;
   margin: 0 0 12;
   font-weight: 700;
@@ -479,7 +479,10 @@ template {
   display: block;
 }
 
-#pages_section {
+#services,
+#projects,
+#about-us,
+#contact {
   padding: 48px 0;
 }
 
@@ -648,13 +651,15 @@ footer i {
 .sliderButton {
   color: #fff;
   font-weight: bold;
-  height: 100%;
+  height: 45px;
   width: 45px;
-  line-height: 250px;
+  border-radius: 50%;
+  line-height: 45px;
   font-size: 25px;
   text-align: center;
   background-color: #5a4b47;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 3;
   text-decoration: none;
   cursor: pointer;
@@ -731,6 +736,7 @@ footer i {
   height: 200px;
   background-size: cover;
   background-color: #f6b141;
+  border-radius: 4px;
   margin: 5px;
   cursor: pointer;
   transition: 0.5s ease;
@@ -803,7 +809,7 @@ footer i {
   object-fit: cover;
 }
 
-.contact {
+.contact-wrap {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -812,20 +818,20 @@ footer i {
   margin-top: 48px;
 }
 
-.contact .contact-image {
+.contact-wrap .contact-image {
   width: 100%;
   height: 100%;
   overflow: hidden;
   width: 50%;
 }
 
-.contact .contact-image img {
+.contact-wrap .contact-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.contact .contact-text {
+.contact-wrap .contact-text {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -834,18 +840,18 @@ footer i {
   height: 100%;
 }
 
-.contact .contact-text h2 {
+.contact-wrap .contact-text h2 {
   margin: 0 0 0 0;
   border-top: 1px solid #5a4b47;
   border-bottom: 1px solid #5a4b47;
   padding: 10px;
 }
 
-.contact .contact-text h3 {
+.contact-wrap .contact-text h3 {
   font-weight: 400;
 }
 
-.contact .contact-text .contact-cart {
+.contact-wrap .contact-text .contact-cart {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -853,7 +859,7 @@ footer i {
   width: 100%;
 }
 
-.contact .contact-text .contact-cart div {
+.contact-wrap .contact-text .contact-cart div {
   height: 100%;
   width: 85%;
 }
@@ -880,7 +886,6 @@ footer i {
 
 .about-us p {
   text-align: left;
-  padding-bottom: 25px;
 }
 
 .about-us a {
@@ -891,16 +896,21 @@ footer i {
   height: 250px;
   width: 80%;
   position: relative;
+  margin-bottom: 96px;
 }
 
 .gallery .switchLeft {
   position: absolute;
-  left: 0px;
+  left: -50px;
 }
 
 .gallery .switchRight {
   position: absolute;
-  right: 0px;
+  right: -50px;
+}
+
+.gallery .carousel-text {
+  background-color: red;
 }
 
 /* Views */

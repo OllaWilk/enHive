@@ -50,11 +50,11 @@
   <!-- Navigation -->
     <nav class= "navigation ">
         <div class="navigation-wrap container">
-          <a href="/" class="btn-brown">Home</a>
-          <a href="/" class="btn-brown">Services</a>
-          <a href="/" class="btn-brown">Projects</a>
-          <a href="/" class="btn-brown">About Us</a>
-          <a href="/" class="btn-brown">Contact</a>
+          <a href="/" class="btn-brown" data-link="" >Home</a>
+          <a href="/" class="btn-brown" data-link="services" >Services</a>
+          <a href="/" class="btn-brown" data-link="projects" >Projects</a>
+          <a href="/" class="btn-brown" data-link="about-us" >About Us</a>
+          <a href="/" class="btn-brown" data-link="contact" >Contact</a>
         </div>
     </nav>
   <!-- HEader -->
@@ -75,7 +75,7 @@
     <div id="pages">
         <section id="home active">
           <!-- services -->
-            <div class="services container" id="pages_section">
+            <div class="services container" id="services">
                 <h2>services</h2>
                 <div class="projects-wrap">
                   <i class="fas fa-pencil-alt"></i>
@@ -104,8 +104,7 @@
             </div>
 
           <!-- our projects -->
-
-            <div class="our-projects" id="pages_section">
+            <div class="our-projects" id="projects">
                 <h2>Our projects</h2>
                 <div class="galery-card-wrap container">
                   <div class="card">
@@ -151,7 +150,7 @@
             </div>
             
           <!-- about us -->
-            <article class="about-us container" id="pages_section">
+            <article class="about-us container" id="about-us">
               <h2>About us</h2>
               <h3> Quality provided by know-how, now available for you
               </h3>
@@ -173,8 +172,7 @@
             </article>
 
           <!-- gallery -->
-
-          <div class="gallery container">
+          <div class="gallery container" >
             <div class="carouselbox">
               <img src="./images/small/img-1.jpg" alt="" class="img-1 slider-img">
               <img src="./images/small/komotini_sm.jpg" alt="" class="img-2 slider-img">
@@ -188,43 +186,54 @@
   
             
             </div>
-
             <div href="" class="switchLeft sliderButton"><</div>
             <div href="" class="switchRight sliderButton">></div>
+            <!-- <div class="carousel-text">
+                <article>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatem, accusamus a vero quae, quis magnam et numquam accusantium iusto quidem, totam quaerat veniam sunt blanditiis deserunt. 
+                        Aspernatur, sapiente placeat!</p>
+                </article>
+
+            </div> -->
           </div>
 
           <!-- contact -->
-            <div class="contact container" id="pages_section">
-                <div class="contact-image">
-                  <img src="./images/job-team.jpg" alt="hand on panel">
+            <div class="contact container" id="contact">
+                <h2>contact</h2>
+                <div class="contact-wrap">
+                    <div class="contact-image">
+                        <img src="./images/job-team.jpg" alt="hand on panel">
+                      </div>
+                      <div class="contact-text">
+                        <h2>we are providing the highest level of service <br>
+                          for clients worldwide
+                        </h2>
+                        <div class="contact-cart">
+                          <i class="far fa-envelope"></i>
+                          <div>
+                            <h4>Contact now</h4>
+                            <p>wojciech@enhive.pl</p>
+                          </div>
+                        </div>
+                        <div class="contact-cart">
+                          <i class="fas fa-phone-alt"></i>
+                          <div>
+                            <h4>Call now</h4>
+                            <p>+48 571 902 200</p>
+                          </div>
+                        </div>
+                        <div class="contact-cart">
+                          <i class="fas fa-map-marked-alt"></i>
+                          <div>
+                            <h4>Our location</h4>
+                            <p>ul. Stefana Czarnieckiego 5/11 <br>
+                               53-650 Wrocław</p>
+                          </div>
+                        </div>
+                      </div>
                 </div>
-                <div class="contact-text">
-                  <h2>we are providing the highest level of service <br>
-                    for clients worldwide
-                  </h2>
-                  <div class="contact-cart">
-                    <i class="far fa-envelope"></i>
-                    <div>
-                      <h4>Contact now</h4>
-                      <p>wojciech@enhive.pl</p>
-                    </div>
-                  </div>
-                  <div class="contact-cart">
-                    <i class="fas fa-phone-alt"></i>
-                    <div>
-                      <h4>Call now</h4>
-                      <p>+48 571 902 200</p>
-                    </div>
-                  </div>
-                  <div class="contact-cart">
-                    <i class="fas fa-map-marked-alt"></i>
-                    <div>
-                      <h4>Our location</h4>
-                      <p>ul. Stefana Czarnieckiego 5/11 <br>
-                         53-650 Wrocław</p>
-                    </div>
-                  </div>
-                </div>
+                
             </div>
         </section> 
     </div>

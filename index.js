@@ -41,6 +41,21 @@ switchRight.addEventListener('click', (e) => {
   }
 });
 
+/*Scroll to section*/
+
+const links = document.querySelectorAll('.navigation-wrap a');
+
+links.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    
+    const el = document.getElementById(link.getAttribute('data-link'));
+    el.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  });
+});
 
 
 

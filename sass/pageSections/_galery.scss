@@ -2,15 +2,24 @@
     height: 250px;
     width: 80%;
     position: relative;
+  
+    margin-bottom: 96px;
 
     .switchLeft {
         position: absolute;
-        left: 0px;
+        left: -50px;
     } 
     
     .switchRight {
         position: absolute;
-        right: 0px;
+        right: -50px;
+    }
+
+    .carousel-text {
+        background-color: red;
+        // opacity: 0.5;
+        // width: 100%;
+        // height: 500px;
     }
 }
 
