@@ -1,0 +1,16 @@
+.gallery {
+    height: 250px;
+    width: 80%;
+    position: relative;
+
+    .switchLeft {
+        position: absolute;
+        left: 0px;
+    } 
+    
+    .switchRight {
+        position: absolute;
+        right: 0px;
+    }
+}
+

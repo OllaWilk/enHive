@@ -1,129 +1,29 @@
-.carousel {
-    height: 250px;
-    width: 80%;
-    position: relative;
-
-    .switchLeft,
-    .switchRight {
-        color: $color-light;
-        font-weight: bold;
-        height: 100%;
-        width: 45px;
-        line-height: 250px;
-        font-size: 25px;
-        text-align: center;
-        background-color: $color-main;
-        top: 0;
-        z-index: 3;
-    }
-
-    .switchLeft {
-        position: absolute;
-        left: 0;
-    } 
-    
-    .switchRight {
-        position: absolute;
-        right: 0;
-    }
-}
 
 .carouselbox {
     height: 250px;
     width: auto;
-    overflow: scroll;
+    overflow: hidden;
     white-space: nowrap;
     display: inline-block;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     display: flex;
     align-items: center;
 
 }
 
-.carouselbox img {
-    min-height: 250px;
-    max-width: 147px;
-    height: 200px;
-    background-size: cover;
-    background-color: $color-main;
-    margin: 5px 10px;
-    cursor: pointer;
-    transition: 0.5s ease;
-    z-index: 2;
-}
-
-.couroselbox img:hover {
-    transform: scale(1.4);
-    z-index: 5;
-}
-
-
-.gallery {
-    padding: 0;
-    &::before, &::after {
-        clear: both;
-        content: "";
-        display: table;
-    }
-}
-.gallery-tile {
-    position: relative;
-    float: left;
-    width: 20%;
-    &::after {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: black;
-        content: '';
-        left: 0;
-        top: 0;
-        opacity: 0;
-        transition: all 0.6s;
-        }
-
-    &:hover::after {
-    opacity: 0.5;
-    }
-
+.carouselbox {
+    
     img {
-    float: left;
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+        min-height: 250px;
+        max-width: 300px;
+        height: 200px;
+        background-size: cover;
+        background-color: $color-main;
+        margin: 5px ;
+        cursor: pointer;
+        transition: 0.5s ease;
+        z-index: 2;
+
     }
-}
-
-.gallery-tile:hover .gallery-content {
-    z-index: 1;
-    opacity: 1;
-}
-
-.gallery-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    opacity: 0;
-    transition: all 0.3s;
-}
-
-
-.gallery-button {
-    width: 100%;
-    height: 40px;
-    border: none;
-    font-size: 14px;
-    font: uppercase;
-    background: $color-main;
-    color: $color-light;
-    cursor: pointer;
-}
-.gallery-title {
-    color: $color-light;
-    letter-spacing: 3px;
-    margin: 0;
-
-
 }
